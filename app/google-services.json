@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "15663857224",
+    "firebase_url": "https://partyplanner-9cc81.firebaseio.com",
+    "project_id": "partyplanner-9cc81",
+    "storage_bucket": "partyplanner-9cc81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15663857224:android:b565caebc84e1929",
+        "android_client_info": {
+          "package_name": "com.example.eliott.partyplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15663857224-ockg1p3p9f526hcgtfrvod4b8529ujjt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eliott.partyplanner",
+            "certificate_hash": "6e8a94c64e09c8a1cab290a52c58bdd7323654ab"
+          }
+        },
+        {
+          "client_id": "15663857224-ptfkhpf7olin6090igg2pdour9la490n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7kAxgYLtpK6Fkmyvx-3JrSRgHFF8_pNs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15663857224-ptfkhpf7olin6090igg2pdour9la490n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
