@@ -48,6 +48,8 @@ public class Welcome extends AppCompatActivity {
     int partyHour;
     int partyMinute;
 
+    private String currentPartyId;
+
     Button logoutbtn;
     Button newParty;
 
@@ -181,10 +183,12 @@ public class Welcome extends AppCompatActivity {
 
                 if(!TextUtils.isEmpty(user.getDisplayName())){
                     addNewParty(partyYear, partyMonth, partyDay, partyHour, partyMinute, user.getDisplayName(), uniqueID, location);
+                    currentPartyId = uniqueID;
                     startActivity(goToNewParty);
 
                 }else{
                     addNewParty(partyYear, partyMonth, partyDay, partyHour, partyMinute, user.getEmail(), uniqueID, location);
+                    currentPartyId = uniqueID;
                     startActivity(goToNewParty);
                 }
 
@@ -269,6 +273,7 @@ public class Welcome extends AppCompatActivity {
 
         Party party = new Party(year, month, day, hour, minute, user, location, partyID);
         mDatabase.child("Parties").child(partyID).setValue(party);
+        mDatabase.child("Users").child(user).child("ownParties").setValue(partyID);
 
     }
 
@@ -307,5 +312,9 @@ public class Welcome extends AppCompatActivity {
         }
 
 
+    }
+
+    public String getCurrentPartyId(){
+        return currentPartyId;
     }
 }
